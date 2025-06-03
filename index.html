@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizualny Plan Kampanii Nexpertis (5k PLN - Segment WEBCON)</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-black: #000000;
+            --brand-pink-accent: #ff0055;
+            --brand-yellow-main: #ffeb03;
+            --brand-white: #ffffff;
+            --brand-blue-purple-main: #5d2de6;
+            --brand-gray-text: #212529;
+            --brand-gray-text-light: #6c757d;
+            --brand-gray-bg: #f8f9fa;
+            --brand-gray-border-light: #dee2e6;
+            --brand-gray-border-medium: #ced4da;
+            --brand-yellow-light: #fffefa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-gray-bg);
+            color: var(--brand-gray-text);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--brand-black);
+        }
+        .container-main { max-width: 1100px; margin: 2rem auto; padding: 2rem; background-color: var(--brand-white); border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.9rem; }
+        th, td { border: 1px solid var(--brand-gray-border-light); padding: 0.75rem; text-align: left; vertical-align: top; }
+        th { background-color: var(--brand-yellow-light); font-weight: 600; color: var(--brand-black); }
+        td ul { list-style: none; padding-left: 0; margin: 0; }
+        td ul li { margin-bottom: 0.25rem; padding-left: 1.25rem; position: relative; }
+        td ul li::before { content: '•'; position: absolute; left: 0; color: var(--brand-pink-accent); font-weight: 900; font-size: 1.1em; top: -0.1em; }
+        .budget-highlight { font-weight: 600; color: var(--brand-blue-purple-main); }
+        .total-budget-row td { font-weight: 700; background-color: var(--brand-yellow-main); color: var(--brand-black); }
+        .month-section { margin-bottom: 2.5rem; }
+        .month-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--brand-yellow-main); }
+        .channel-title { font-size: 1.25rem; font-weight: 600; color: var(--brand-pink-accent); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .campaign-title { font-size: 1.1rem; font-weight: 600; color: var(--brand-blue-purple-main); margin-top: 1rem; margin-bottom: 0.5rem; }
+        .adset-title { font-size: 1rem; font-weight: 500; color: var(--brand-gray-darker); margin-top: 0.75rem; margin-bottom: 0.25rem; padding-left: 1rem; }
+        .ad-type { font-style: italic; color: var(--brand-gray-text-light); font-size: 0.85rem; }
+        .notes { font-size: 0.8rem; color: var(--brand-gray-text-light); margin-top: 1rem; padding: 0.75rem; background-color: #f9fafb; border-left: 3px solid var(--brand-yellow-main); border-radius: 0.25rem; }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <h1 class="text-3xl font-bold text-center mb-2">Szczegółowy Plan Kampanii Płatnych (5000 PLN/mc)</h1>
+        <h2 class="text-xl text-center mb-8" style="color: var(--brand-gray-dark);">Segment: "Strażnik Istniejącego WEBCONa"</h2>
+
+        <div class="month-section">
+            <h3 class="month-title">Miesiąc 1: Uruchomienie i Faza Nauki</h3>
+            <p class="mb-4 text-sm"><strong>Cel Miesiąca:</strong> Uruchomienie wszystkich kampanii, zebranie wstępnych danych, identyfikacja pierwszych sygnałów efektywności, budowa list remarketingowych, optymalizacja Google Ads.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kanał Reklamowy</th>
+                        <th>Kampania / Cel</th>
+                        <th>Zestaw Reklam (Ad Set)</th>
+                        <th>Rodzaje Reklam (Przykłady)</th>
+                        <th>Budżet Miesięczny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3" style="vertical-align: top; background-color: #fffef0;"><strong>LinkedIn Ads</strong><br><span class="budget-highlight">(Łącznie: 2000 PLN)</span></td>
+                        <td><strong>Kampania 1: MOFU - Lead Magnet "Audyt i Optymalizacja WEBCON"</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Thought Leader Ads - "Audyt Wydajności WEBCON"</div>
+                            <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (wizerunek eksperta + tytuł checklisty)</span></li>
+                                <li>Reklama 2: <span class="ad-type">Karuzela (kluczowe punkty checklisty)</span></li>
+                            </ul>
+                            <div class="adset-title mt-2">Zestaw 2: Sponsored Content - "Ebook: Rozwój Istniejącego WEBCONa"</div>
+                             <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (okładka ebooka + korzyść)</span></li>
+                                <li>Reklama 2: <span class="ad-type">Karuzela (spis treści, kluczowe rozdziały)</span></li>
+                            </ul>
+                        </td>
+                        <td>Docieranie do decydentów IT, generowanie MQL (pobrania LM). Targetowanie: Dyrektorzy IT, IT Managerowie, Firmy >100 os. (Produkcja, Finanse, Retail, Logistyka), Umiejętności/Zainteresowania: WEBCON BPS.</td>
+                        <td class="budget-highlight">~1000 PLN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kampania 2: TOFU/MOFU - Budowanie Świadomości i Zaangażowania</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Promocja Postów Firmowych - Artykuły Eksperckie</div>
+                            <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (link do art. 1 o utrzymaniu WEBCON)</span></li>
+                                <li>Reklama 2: <span class="ad-type">Statyk (link do art. 2 o rozwoju WEBCON)</span></li>
+                            </ul>
+                            <div class="adset-title mt-2">Zestaw 2: Promocja Postów Firmowych - Wartości Nexpertis</div>
+                             <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (o procesie utrzymania Nexpertis)</span></li>
+                                <li>Reklama 2: <span class="ad-type">Statyk (o statusie Premium Partnera)</span></li>
+                            </ul>
+                        </td>
+                        <td>Zasięg, Ruch na stronę/blog, Zaangażowanie. Targetowanie podobne jak w Kampanii 1, może być nieco szersze.</td>
+                        <td class="budget-highlight">~600 PLN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kampania 3: BOFU - Remarketing do MQL</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Oferta Audytu/Konsultacji</div>
+                            <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (CTA: "Umów Audyt WEBCON")</span></li>
+                                <li>Reklama 2: <span class="ad-type">Karuzela (opinie klientów / etapy audytu)</span></li>
+                            </ul>
+                        </td>
+                        <td>Konwersje (umówienie konsultacji/audytu). Targetowanie: Lista #2 (Leady MQL, które pobrały LM).</td>
+                        <td class="budget-highlight">~400 PLN</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" style="vertical-align: top; background-color: #f0f5ff;"><strong>Meta Ads</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td><strong>Kampania 1: TOFU - Świadomość Rozwiązań WEBCON</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Promocja Postów Firmowych</div>
+                             <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (post o możliwościach WEBCON)</span></li>
+                                <li>Reklama 2: <span class="ad-type">Statyk (post o typowych problemach z WEBCON)</span></li>
+                                <li>Reklama 3: <span class="ad-type">Statyk (link do artykułu o Nexpertis i WEBCON)</span></li>
+                            </ul>
+                        </td>
+                        <td>Ruch, Zasięg, budowanie Listy #1. Targetowanie: Zainteresowania (WEBCON, BPM), Stanowiska IT, Lookalikes.</td>
+                        <td class="budget-highlight">~500 PLN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kampania 2: MOFU - Remarketing #1 i Promocja LM</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Remarketing na Listę #1 (Odwiedzający)</div>
+                            <ul>
+                                <li>Reklama 1: <span class="ad-type">Karuzela (prezentująca różne LM: Checklista Audytu, Ebook Rozwoju)</span></li>
+                            </ul>
+                            <div class="adset-title mt-2">Zestaw 2: Zimny Ruch - Promocja Kluczowego LM</div>
+                             <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (promujący np. Ebook "7 sposobów na optymalizację WEBCON")</span></li>
+                                <li>Reklama 2: <span class="ad-type">Statyk (inna kreacja dla tego samego Ebooka)</span></li>
+                            </ul>
+                        </td>
+                        <td>Konwersje (pobrania LM), generowanie MQL. Targetowanie: Lista #1 (Odwiedzający sekcje WEBCON), Lookalikes (MQL/klienci), Zainteresowania (WEBCON + IT).</td>
+                        <td class="budget-highlight">~600 PLN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kampania 3: BOFU - Remarketing do MQL</strong></td>
+                        <td>
+                            <div class="adset-title">Zestaw 1: Oferta Audytu/Konsultacji</div>
+                            <ul>
+                                <li>Reklama 1: <span class="ad-type">Statyk (CTA: "Umów Bezpłatny Audyt WEBCON")</span></li>
+                                <li>Reklama 2: <span class="ad-type">Karuzela (korzyści współpracy, opinie)</span></li>
+                            </ul>
+                        </td>
+                        <td>Konwersje (umówienie konsultacji/audytu). Targetowanie: Lista #2 (Leady MQL z segmentu WEBCON).</td>
+                        <td class="budget-highlight">~400 PLN</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; background-color: #fff9e6;"><strong>Google Ads Search</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td><strong>Kampania 1: WEBCON - Utrzymanie i Rozwój (BOFU)</strong></td>
+                        <td>
+                            <div class="adset-title">Ad Group 1: Utrzymanie WEBCON</div>
+                            <span class="ad-type">Reklamy tekstowe RSA (2-3 warianty)</span>
+                            <div class="adset-title mt-2">Ad Group 2: Rozwój WEBCON</div>
+                            <span class="ad-type">Reklamy tekstowe RSA (2-3 warianty)</span>
+                            <div class="adset-title mt-2">Ad Group 3: Problemy / Audyt / Zmiana Partnera WEBCON</div>
+                            <span class="ad-type">Reklamy tekstowe RSA (2-3 warianty)</span>
+                        </td>
+                        <td>Przechwycenie zapytań od firm szukających wsparcia/rozwoju WEBCON. Słowa kluczowe: `utrzymanie webcon`, `rozwój webcon bps`, `audyt webcon`, `problemy z webcon`. <strong>Wymaga pilnej optymalizacji!</strong></td>
+                        <td class="budget-highlight">1500 PLN</td>
+                    </tr>
+                    <tr class="total-budget-row">
+                        <td colspan="4"><strong>Miesięczny Budżet Całkowity</strong></td>
+                        <td><strong>5000 PLN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="notes">
+                <strong>Uwagi do Miesiąca 1:</strong> Kluczowe jest monitorowanie CTR, CPC, CPL (dla kampanii MOFU) i liczby zapytań (dla BOFU). Zbieranie danych dla list remarketingowych. Intensywna optymalizacja Google Ads.
+            </div>
+        </div>
+
+        <div class="month-section">
+            <h3 class="month-title">Miesiąc 2: Optymalizacja i Skalowanie (w ramach budżetu)</h3>
+            <p class="mb-4 text-sm"><strong>Cel Miesiąca:</strong> Analiza wyników z Miesiąca 1. Optymalizacja najskuteczniejszych kampanii/zestawów/reklam. Przesuwanie budżetu do działań generujących najlepsze MQL/SQL. Testowanie nowych kreacji/nagłówków.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kanał Reklamowy</th>
+                        <th colspan="3">Działania i Optymalizacje</th>
+                        <th>Budżet Miesięczny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; background-color: #fffef0;"><strong>LinkedIn Ads</strong><br><span class="budget-highlight">(Łącznie: 2000 PLN)</span></td>
+                        <td colspan="3">Kontynuacja kampanii z Miesiąca 1, z optymalizacją na podstawie wyników. Możliwe:
+                            <ul>
+                                <li>Zwiększenie budżetu na najlepiej konwertujący zestaw LM.</li>
+                                <li>Testowanie nowych kreacji dla Thought Leader Ads / Sponsored Content.</li>
+                                <li>Zawężenie/rozszerzenie targetowania w zależności od jakości leadów.</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">~2000 PLN</td>
+                    </tr>
+                     <tr>
+                        <td style="vertical-align: top; background-color: #f0f5ff;"><strong>Meta Ads</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td colspan="3">Kontynuacja kampanii z Miesiąca 1, z optymalizacją. Możliwe:
+                            <ul>
+                                <li>Wzmocnienie budżetu na remarketing, jeśli Listy #1 i #2 są wystarczająco duże.</li>
+                                <li>Testowanie nowych formatów (np. Instant Experience dla LM).</li>
+                                <li>Optymalizacja targetowania Lookalike.</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">~1500 PLN</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; background-color: #fff9e6;"><strong>Google Ads Search</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td colspan="3">Ciągła optymalizacja:
+                            <ul>
+                                <li>Analiza wyszukiwanych haseł, dodawanie wykluczeń.</li>
+                                <li>Testowanie A/B tekstów reklamowych (RSA).</li>
+                                <li>Monitorowanie i poprawa Quality Score.</li>
+                                <li>Dostosowywanie stawek CPC.</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">1500 PLN</td>
+                    </tr>
+                    <tr class="total-budget-row">
+                        <td colspan="4"><strong>Miesięczny Budżet Całkowity</strong></td>
+                        <td><strong>5000 PLN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="notes">
+                <strong>Uwagi do Miesiąca 2:</strong> Skupienie na obniżaniu CPL/CPA. Identyfikacja "zwycięskich" kreacji i grup docelowych.
+            </div>
+        </div>
+
+        <div class="month-section">
+            <h3 class="month-title">Miesiąc 3: Dalsza Optymalizacja i Planowanie</h3>
+            <p class="mb-4 text-sm"><strong>Cel Miesiąca:</strong> Maksymalizacja ROI z istniejących kampanii. Ocena skuteczności strategii dla Segmentu 1. Planowanie ewentualnego rozszerzenia działań lub testowania nowych segmentów/LM w kolejnych miesiącach.</p>
+             <table>
+                <thead>
+                    <tr>
+                        <th>Kanał Reklamowy</th>
+                        <th colspan="3">Działania i Optymalizacje</th>
+                        <th>Budżet Miesięczny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; background-color: #fffef0;"><strong>LinkedIn Ads</strong><br><span class="budget-highlight">(Łącznie: 2000 PLN)</span></td>
+                        <td colspan="3">Kontynuacja optymalizacji. Możliwe:
+                            <ul>
+                                <li>Jeśli jeden LM działa wyjątkowo dobrze, można rozważyć stworzenie drugiego, komplementarnego.</li>
+                                <li>Testowanie nowych grup docelowych (np. nieco inne branże, które też używają WEBCON).</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">~2000 PLN</td>
+                    </tr>
+                     <tr>
+                        <td style="vertical-align: top; background-color: #f0f5ff;"><strong>Meta Ads</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td colspan="3">Kontynuacja optymalizacji. Możliwe:
+                            <ul>
+                                <li>Skalowanie budżetu na najlepiej działające zestawy remarketingowe.</li>
+                                <li>Testowanie nowych kreacji wideo (jeśli budżet na produkcję by się pojawił).</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">~1500 PLN</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; background-color: #fff9e6;"><strong>Google Ads Search</strong><br><span class="budget-highlight">(Łącznie: 1500 PLN)</span></td>
+                        <td colspan="3">Utrzymanie wysokiej efektywności. Analiza:
+                            <ul>
+                                <li>Które grupy reklam/słowa kluczowe generują najwięcej SQL?</li>
+                                <li>Czy jest przestrzeń do zwiększenia budżetu na najbardziej rentowne frazy?</li>
+                            </ul>
+                        </td>
+                        <td class="budget-highlight">1500 PLN</td>
+                    </tr>
+                    <tr class="total-budget-row">
+                        <td colspan="4"><strong>Miesięczny Budżet Całkowity</strong></td>
+                        <td><strong>5000 PLN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="notes">
+                <strong>Uwagi do Miesiąca 3:</strong> Podsumowanie wyników z 3 miesięcy. Decyzje strategiczne na kolejny kwartał: czy kontynuować fokus na Segment 1, czy rozszerzyć na Segment 2, czy zmodyfikować podział budżetu.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
